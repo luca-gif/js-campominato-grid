@@ -1,23 +1,26 @@
 init();
 
-document.addEventListener.querySelector;
-
 function init() {
     const container = document.querySelector(".container");
-    //genero i quadratini
+    //genero più riquadri
     console.log(container);
 
     for (let i = 0; i < 100; i++) {
-        generaRiquadro(container);
+        generaRiquadro(container, i);
     }
 }
 
 /* Genera un riquadro */
 
-function generaRiquadro(target) {
+function generaRiquadro(target, i) {
     const box = document.createElement("div");
     box.className = "riquadro";
     target.append(box);
+    box.addEventListener("click", function() {
+        this.classList.toggle("blu");
+    });
+
+    box.innerHTML = i + 1;
 }
 
 /*Genera un numero casuale*/

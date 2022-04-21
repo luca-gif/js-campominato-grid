@@ -36,6 +36,14 @@ body {
     height: calc(100% / 10);
 }
 
+.blu {
+    background-color: blue;
+}
+
+.dnone {
+    display: none;
+}
+
 .riquadro.clicked {
     background-color: blue;
 }
