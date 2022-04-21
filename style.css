@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(61, 145, 255);
+    height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: rgb(255, 186, 103);
+    width: 500px;
+    height: 500px;
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.riquadro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+}
+
+.riquadro.clicked {
+    background-color: blue;
+}
